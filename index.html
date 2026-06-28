@@ -566,6 +566,8 @@ body {
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:20px;text-align:center;margin-bottom:20px">
         <div style="color:#8C8272;font-size:13px;margin-bottom:12px;font-family:var(--sans)">💳 Pago seguro vía PayPal · 6 meses sin intereses disponibles</div>
         <div id="paypal-button-container" style="max-width:100%"></div>
+        <div style="text-align:center;color:#504A3E;font-size:12px;margin:12px 0;font-family:var(--sans)">— o paga con tarjeta —</div>
+        <button onclick="payStripe()" style="background:#635bff;color:#fff;border:none;border-radius:8px;padding:14px 32px;font-size:15px;font-weight:600;cursor:pointer;width:100%;font-family:var(--sans)">💳 Pagar con tarjeta (Stripe)</button>
         <div style="font-size:11px;color:#504A3E;margin-top:10px;font-family:var(--sans)">Procesado 100% seguro · SSL · PayPal Verified</div>
       </div>
       <div style="display:flex;gap:12px">
@@ -673,6 +675,11 @@ async function submitMembresia(){
 </script>
 <script>
 /* PayPal real checkout — monto segun plan seleccionado (Standard $2,500 / Premium $3,250 USD) */
+function payStripe(){
+  var links={STANDARD:'https://buy.stripe.com/fZu14f1Z53iw9IJdjr2Ry2b',PREMIUM:'https://buy.stripe.com/4gMfZ95bhcT67AB7Z72Ry2c'};
+  var plan=(typeof selPlan!=='undefined'&&selPlan)?selPlan:'PREMIUM';
+  window.location.href=links[plan]||links.PREMIUM;
+}
 (function(){
   var s=document.createElement('script');
   s.src='https://www.paypal.com/sdk/js?client-id=AfH24JZZa4XKFQwlhKWfrvnjiTyx8HG1U4IjCjJCAGuic0-M_dR8rfz4MimcPHt3ytiCnIVNXW2PSC51&currency=USD&intent=capture';
