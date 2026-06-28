@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Inscripción — Financial Annual Membership | RiskMathics</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Inscríbete a la Financial Annual Membership de RiskMathics. 3 inscripciones, 16 áreas, 6 meses sin intereses.">
+<link rel="canonical" href="https://membership.riskmathicslabs.com">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0A1526;color:#EAF0F8;line-height:1.6}
+  a{text-decoration:none}
+  .wrap{max-width:980px;margin:0 auto;padding:40px 20px}
+  .brand{font-size:12px;letter-spacing:3px;color:#9bb4d6;text-align:center}
+  h1{font-size:30px;margin:10px 0 6px;text-align:center;color:#fff}
+  .sub{text-align:center;color:#E3C27E;font-size:15px;margin-bottom:8px}
+  .intro{text-align:center;max-width:680px;margin:18px auto 8px;color:#cdd9ec;font-size:15px}
+  .note{text-align:center;color:#9bb4d6;font-size:13px;margin-bottom:30px}
+  .cards{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;margin-bottom:14px}
+  .card{background:#11203a;border:1px solid #1d2f4d;border-radius:12px;padding:26px;width:420px;max-width:100%;position:relative}
+  .card.premium{border-color:#E3C27E}
+  .tag{position:absolute;top:-12px;right:20px;background:#E3C27E;color:#0A1526;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:20px}
+  .card h2{font-size:21px;color:#fff;margin-bottom:6px}
+  .card p{color:#cdd9ec;font-size:14px;margin-bottom:14px}
+  .feat{list-style:none;margin:0 0 20px}
+  .feat li{padding:5px 0 5px 24px;position:relative;font-size:14px;color:#dbe6f5}
+  .feat li:before{content:'\2713';position:absolute;left:0;color:#E3C27E;font-weight:bold}
+  .pick{display:block;text-align:center;padding:13px;border-radius:8px;font-weight:bold;font-size:15px;cursor:pointer;border:none;width:100%}
+  .pick-std{background:#1d4ed8;color:#fff}
+  .pick-prem{background:#E3C27E;color:#0A1526}
+  /* form */
+  .form-sec{background:#11203a;border:1px solid #1d2f4d;border-radius:12px;padding:30px;max-width:620px;margin:24px auto 0}
+  .form-sec h3{color:#fff;font-size:20px;margin-bottom:4px}
+  .form-sec .hint{color:#9bb4d6;font-size:13px;margin-bottom:18px}
+  label{display:block;font-size:13px;color:#cdd9ec;margin:12px 0 5px}
+  input,select{width:100%;padding:11px 13px;border-radius:7px;border:1px solid #2a3f63;background:#0A1526;color:#EAF0F8;font-size:15px}
+  .row{display:flex;gap:14px;flex-wrap:wrap}
+  .row>div{flex:1;min-width:200px}
+  .submit{margin-top:22px;width:100%;padding:15px;border:none;border-radius:8px;background:#E3C27E;color:#0A1526;font-weight:bold;font-size:16px;cursor:pointer}
+  .submit:disabled{opacity:.6;cursor:wait}
+  .msg{text-align:center;margin-top:14px;font-size:14px}
+  .areas{margin:30px auto 0;max-width:760px;text-align:center;color:#9bb4d6;font-size:12px}
+  .foot{text-align:center;margin-top:28px;color:#9bb4d6;font-size:13px}
+  .foot a{color:#E3C27E}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">RISKMATHICS FINANCIAL INSTITUTE</div>
+  <h1>Financial Annual Membership</h1>
+  <div class="sub">The Human Factor &middot; Cronograma 2026&ndash;2027</div>
+  <p class="intro">Una sola membres&iacute;a te da <b>3 inscripciones</b> al a&ntilde;o, en cualquiera de nuestras <b>16 &aacute;reas</b> &mdash; sin importar costo ni duraci&oacute;n de los programas.</p>
+  <p class="note">Exclusivo para <b>personas f&iacute;sicas</b> &middot; Hasta <b>6 meses sin intereses</b></p>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Membres&iacute;a Est&aacute;ndar</h2>
+      <p>2 Cursos + 1 Diplomado del cronograma completo.</p>
+      <ul class="feat"><li>2 Cursos</li><li>1 Diplomado</li><li>Las 16 &aacute;reas disponibles</li></ul>
+      <button class="pick pick-std" onclick="pick('Estandar')">Elegir Est&aacute;ndar</button>
+    </div>
+    <div class="card premium">
+      <span class="tag">RECOMENDADA</span>
+      <h2>Membres&iacute;a Premium</h2>
+      <p>2 Cursos o Conferencias + 1 Programa Ejecutivo.</p>
+      <ul class="feat"><li>2 Cursos o Conferencias</li><li>1 <b>Programa Ejecutivo</b></li><li>Las 16 &aacute;reas disponibles</li></ul>
+      <button class="pick pick-prem" onclick="pick('Premium')">Elegir Premium</button>
+    </div>
+  </div>
+
+  <div class="form-sec" id="form-sec">
+    <h3>Completa tu inscripci&oacute;n</h3>
+    <p class="hint">D&eacute;janos tus datos y te llevamos al pago seguro. Tu lugar queda apartado.</p>
+    <form id="insc">
+      <div class="row">
+        <div><label>Nombre completo *</label><input name="nombre" required></div>
+        <div><label>Email *</label><input name="email" type="email" required></div>
+      </div>
+      <div class="row">
+        <div><label>Tel&eacute;fono / WhatsApp</label><input name="telefono"></div>
+        <div><label>Instituci&oacute;n / Empresa</label><input name="institucion"></div>
+      </div>
+      <div class="row">
+        <div><label>Membres&iacute;a *</label>
+          <select name="membresia" id="membresia" required>
+            <option value="">Elige una&hellip;</option>
+            <option value="Estandar">Est&aacute;ndar (2 cursos + 1 diplomado)</option>
+            <option value="Premium">Premium (2 cursos/conf + 1 programa ejecutivo)</option>
+          </select></div>
+        <div><label>&Aacute;rea de inter&eacute;s</label>
+          <select name="area">
+            <option value="">Elige una&hellip;</option>
+            <option>Financial Risk Management</option><option>Global Markets</option>
+            <option>Investment Banking</option><option>Private Wealth Management</option>
+            <option>ESG, Climate Risk &amp; Sustainable Finance</option><option>Derivatives</option>
+            <option>Treasury &amp; Cash Management</option><option>Alternative Investment</option>
+            <option>Machine Learning</option><option>Quantum Computing</option>
+            <option>Markets Regulation</option><option>Cr&eacute;dito</option>
+            <option>Asset Management</option><option>Trading Economics</option>
+            <option>Factoraje</option><option>Arrendamiento</option>
+          </select></div>
+      </div>
+      <button class="submit" id="btn" type="submit">Inscribirme y continuar al pago &rarr;</button>
+      <p class="msg" id="msg"></p>
+    </form>
+  </div>
+
+  <p class="areas">16 &aacute;reas: Financial Risk Management &middot; Global Markets &middot; Investment Banking &middot; Private Wealth Management &middot; ESG &amp; Climate Risk &middot; Derivatives &middot; Treasury &amp; Cash Management &middot; Alternative Investment &middot; Machine Learning &middot; Quantum Computing &middot; Markets Regulation &middot; Cr&eacute;dito &middot; Asset Management &middot; Trading Economics &middot; Factoraje &middot; Arrendamiento</p>
+  <p class="foot">&iquest;Dudas? Tel. +52 (55) 5536 3597 &middot; <a href="https://riskmathics.com/membership">Ver detalles en riskmathics.com</a></p>
+</div>
+
+<script>
+const SB_URL="https://bffdsgvgcvmojobfiuay.supabase.co";
+const SB_ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
+const PAY={Estandar:"https://riskmathics.com/inscripcion/MS2025#standardpage",Premium:"https://riskmathics.com/inscripcion/MSP2025#premiumpage"};
+function pick(m){document.getElementById('membresia').value=m;document.getElementById('form-sec').scrollIntoView({behavior:'smooth'});}
+document.getElementById('insc').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=document.getElementById('btn'),msg=document.getElementById('msg');
+  const f=e.target, d={nombre:f.nombre.value,email:f.email.value,telefono:f.telefono.value,institucion:f.institucion.value,membresia:f.membresia.value,area:f.area.value,fuente:'landing-membership'};
+  btn.disabled=true;btn.textContent='Procesando…';
+  try{
+    await fetch(SB_URL+'/rest/v1/membership_leads',{method:'POST',headers:{'apikey':SB_ANON,'Authorization':'Bearer '+SB_ANON,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(d)});
+  }catch(err){}
+  msg.style.color='#7CFC9B';msg.textContent='¡Listo! Te llevamos al pago…';
+  setTimeout(function(){window.location.href=PAY[d.membresia]||PAY.Estandar;},900);
+});
+</script>
+</body>
+</html>
