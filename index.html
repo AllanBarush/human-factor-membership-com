@@ -177,6 +177,15 @@ body {
   .section-inner { padding: 60px 20px; }
 }
 </style>
+
+<style id="upd-sep26">
+.tier-card{display:block;width:100%;max-width:340px;margin:0 auto 22px;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.why-now{list-style:none;padding:0;margin:26px auto 0;max-width:720px;text-align:left}
+.why-now li{font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;color:var(--text-sub);padding:12px 0 12px 30px;border-top:1px solid rgba(215,185,120,.18);position:relative}
+.why-now li::before{content:"";position:absolute;left:0;top:22px;width:14px;height:1px;background:var(--accent)}
+.why-now li:last-child{border-bottom:1px solid rgba(215,185,120,.18)}
+.passport{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.5;color:var(--accent);margin:26px auto 0;max-width:760px}
+</style>
 </head>
 <body style="background:#0E0C08;color:#fff;margin:0">
 
@@ -187,7 +196,7 @@ body {
     <h1 class="reveal">THE HUMAN<span>FACTOR</span></h1>
     <div class="accent-line reveal"></div>
     <p class="tagline reveal">La mejor inversión es en ti.</p>
-    <p style="font-family:var(--sans);font-weight:300;font-size:14px;color:var(--text-muted);margin-bottom:40px;" class="reveal">Posiciónate a otro nivel dentro de la industria Financiera y Corporativa Global</p>
+    <p style="font-family:var(--sans);font-weight:300;font-size:14px;color:var(--text-muted);margin-bottom:40px;" class="reveal">El conocimiento abre puertas. La red de contactos te da acceso. Posiciónate a otro nivel dentro de la industria Financiera y Corporativa Global</p>
     <p class="meta reveal">RiskMathics Financial Institute</p>
   </div>
 </section>
@@ -276,37 +285,41 @@ body {
     <div class="tiers reveal">
       <!-- STANDARD -->
       <div class="tier tier-standard">
+        <img class="tier-card" src="card-standard.jpg" alt="RiskMathics Financial Institute Membership Standard" loading="lazy">
         <div class="tier-label">Standard</div>
-        <div class="tier-price">$2,500</div>
+        <div class="tier-price">$3,500</div>
         <div class="tier-currency">USD + TAX (16%)</div>
         <ul class="tier-features">
           <li>1 Diplomado completo a elegir</li>
-          <li>2 Cursos o Encuentros internacionales</li>
-          <li>40+ campos de alta especialización</li>
+          <li>2 Cursos o Encuentros internacionales a elegir</li>
+          <li>40+ campos de alta especialización: Derivados, Risk Management, Investment Banking, Private Equity, Hedge Funds, ESG &amp; Climate Risk, Machine Learning, Quantum Computing y más</li>
           <li>Clases en vivo, online o presenciales</li>
-          <li>Networking estratégico con líderes del sector Financiero y Corporativo</li>
-          <li>Vigencia de 12 meses desde inscripción a la membresía</li>
+          <li>Certificación con valor curricular reconocida internacionalmente</li>
+          <li>Networking con expertos y líderes del sector Financiero y Corporativo</li>
+          <li>Vigencia de 12 meses (un año natural) desde la inscripción</li>
         </ul>
-        <a href="#" class="tier-cta" onclick="openMembershipModal('STANDARD','$2,500');return false;">Aplicar → Standard</a>
+        <a href="#" class="tier-cta" onclick="openMembershipModal('STANDARD','$3,500');return false;">Aplicar → Standard</a>
       </div>
 
       <!-- PREMIUM -->
       <div class="tier tier-premium">
+        <img class="tier-card" src="card-premium.jpg" alt="RiskMathics Financial Institute Membership Premium" loading="lazy">
         <div class="tier-label">Premium</div>
-        <div class="tier-price">$3,500</div>
+        <div class="tier-price">$4,650</div>
         <div class="tier-currency">USD + TAX (16%)</div>
         <ul class="tier-features">
-          <li>1 Diplomado o Programa Ejecutivo completo a elegir</li>
-          <li>2 Cursos o Encuentros internacionales</li>
+          <li class="highlight">1 Programa Ejecutivo completo a elegir, sin importar su costo ni su duración</li>
+          <li>2 Cursos o Encuentros internacionales a elegir</li>
           <li>40+ campos de alta especialización</li>
           <li>Clases en vivo, online o presenciales</li>
-          <li>Networking estratégico con líderes del sector Financiero y Corporativo</li>
-          <li class="highlight">Financial Running — inscripción incluida</li>
-          <li>Eventos exclusivos presenciales de networking</li>
-          <li>Invitaciones VIP con líderes del sector global</li>
-          <li>Acceso por 12 meses desde inscripción</li>
+          <li>Certificación con valor curricular reconocida internacionalmente</li>
+          <li class="highlight">Acceso VIP al Risk Management &amp; Trading Conference</li>
+          <li class="highlight">Financial Running: inscripción incluida</li>
+          <li>Cenas privadas y eventos VIP de RiskMathics durante toda la vigencia</li>
+          <li>Networking con las autoridades más influyentes del sector financiero global</li>
+          <li>Vigencia de 14 meses desde la inscripción</li>
         </ul>
-        <a href="#" class="tier-cta" onclick="openMembershipModal('PREMIUM','$3,500');return false;" style="background:var(--accent);color:#0E0C08;">Aplicar → Premium</a>
+        <a href="#" class="tier-cta" onclick="openMembershipModal('PREMIUM','$4,650');return false;" style="background:var(--accent);color:#0E0C08;">Aplicar → Premium</a>
       </div>
     </div>
 
@@ -314,13 +327,13 @@ body {
       <div class="accent-line"></div>
       <p style="font-weight:300;font-size:13px;letter-spacing:2px;color:var(--text-muted);margin-bottom:12px;">LO QUE PODRÍAS INVERTIR POR SEPARADO</p>
       <p style="font-family:var(--sans);font-weight:300;font-size:16px;color:var(--text-sub);line-height:1.8;">
-        CRO Executive Program: <strong style="color:var(--accent)">$14,000 USD</strong><br>
+        CRO Executive Program: <strong style="color:var(--accent)">$18,450 USD</strong><br>
         Risk Management &amp; Trading Conference: <strong style="color:var(--accent)">$3,900 USD</strong><br>
         Treasury &amp; Cash Management Program: <strong style="color:var(--accent)">$3,500 USD</strong><br>
-        <span style="font-weight:600;font-size:18px;color:var(--text-main);margin-top:8px;display:inline-block;">Total: $21,400 USD</span>
+        <span style="font-weight:600;font-size:18px;color:var(--text-main);margin-top:8px;display:inline-block;">Total: $25,850 USD</span>
       </p>
-      <p class="roi-text" style="margin-top:20px;font-size:22px;">Tu Membresía Premium: $3,500 USD</p>
-      <p style="font-family:var(--serif);font-style:italic;font-size:16px;color:var(--accent);margin-top:8px;">Ahorro de más de $17,900 USD</p>
+      <p class="roi-text" style="margin-top:20px;font-size:22px;">Tu Membresía Premium: $4,650 USD</p>
+      <p style="font-family:var(--serif);font-style:italic;font-size:16px;color:var(--accent);margin-top:8px;">Ahorro de más de $21,000 USD</p>
     </div>
   </div>
 </section>
@@ -402,12 +415,18 @@ body {
     <div class="accent-line reveal"></div>
     <p class="tagline reveal">Los presupuestos corporativos de formación se reducen.<br>
     Tu ventaja competitiva no debería reducirse con ellos.</p>
+    <p class="passport reveal">Esta no es solo una membresía: es tu pasaporte a los círculos de influencia más importantes del mundo financiero.</p>
+    <ul class="why-now reveal">
+      <li>La competencia está elevando su nivel mientras otros siguen esperando oportunidades.</li>
+      <li>En el sector financiero, las decisiones correctas en el momento oportuno hacen la diferencia.</li>
+      <li>Sin conocimiento, sin acceso y sin networking, el crecimiento profesional es una ilusión.</li>
+    </ul>
     
     <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px">
       <a href="#" onclick="openInfoModal();return false;" style="display:inline-block;padding:16px 36px;border:1px solid rgba(215,185,120,0.4);border-radius:4px;color:var(--accent);font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.3s" onmouseover="this.style.borderColor='var(--accent)';this.style.background='rgba(215,185,120,0.08)'" onmouseout="this.style.borderColor='rgba(215,185,120,0.4)';this.style.background='transparent'">Solicitar Información</a>
-      <a href="#" onclick="openMembershipModal('PREMIUM','$3,500');return false;" class="cta-button" style="margin-top:0">Obtener Membresía</a>
+      <a href="#" onclick="openMembershipModal('PREMIUM','$4,650');return false;" class="cta-button" style="margin-top:0">Obtener Membresía</a>
     </div>
-    <p class="cta-from reveal">Desde $2,500 USD + IVA · Plazos disponibles</p>
+    <p class="cta-from reveal">Desde $3,500 USD + TAX · Plazos disponibles</p>
       <p class="reveal" style="margin-top:28px;font-family:var(--sans);font-size:14px;color:#8C8272;letter-spacing:0.04em">
         <a href="mailto:membership@riskmathics.com" style="color:var(--accent);text-decoration:none">membership@riskmathics.com</a>
         &nbsp;·&nbsp; RiskMathics Financial Institute &nbsp;·&nbsp; Ciudad de México
@@ -472,16 +491,16 @@ body {
 
     <!-- Plan selector -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px" id="plan-selector">
-      <div id="plan-std" onclick="selectPlan('STANDARD','$2,500','2500')" style="cursor:pointer;border:1px solid rgba(215,185,120,0.2);border-radius:8px;padding:20px;transition:all 0.2s">
+      <div id="plan-std" onclick="selectPlan('STANDARD','$3,500','3500')" style="cursor:pointer;border:1px solid rgba(215,185,120,0.2);border-radius:8px;padding:20px;transition:all 0.2s">
         <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8C8272;margin-bottom:6px;font-family:var(--sans)">Standard</div>
-        <div style="font-size:26px;font-weight:300;color:#fff;font-family:var(--sans)">$2,500 <span style="font-size:13px;color:#8C8272">USD + IVA</span></div>
+        <div style="font-size:26px;font-weight:300;color:#fff;font-family:var(--sans)">$3,500 <span style="font-size:13px;color:#8C8272">USD + IVA</span></div>
         <div style="font-size:12px;color:#8C8272;margin-top:8px;font-family:var(--sans)">1 Diplomado + 2 Cursos · 12 meses</div>
       </div>
-      <div id="plan-pre" onclick="selectPlan('PREMIUM','$3,500','3500')" style="cursor:pointer;border:1px solid var(--accent);border-radius:8px;padding:20px;background:rgba(215,185,120,0.06);transition:all 0.2s;position:relative">
+      <div id="plan-pre" onclick="selectPlan('PREMIUM','$4,650','4650')" style="cursor:pointer;border:1px solid var(--accent);border-radius:8px;padding:20px;background:rgba(215,185,120,0.06);transition:all 0.2s;position:relative">
         <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0E0C08;font-size:9px;font-weight:700;letter-spacing:0.1em;padding:3px 10px;border-radius:10px;white-space:nowrap;font-family:var(--sans)">RECOMENDADO</div>
         <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;font-family:var(--sans)">Premium</div>
-        <div style="font-size:26px;font-weight:300;color:#fff;font-family:var(--sans)">$3,500 <span style="font-size:13px;color:#8C8272">USD + IVA</span></div>
-        <div style="font-size:12px;color:#8C8272;margin-top:8px;font-family:var(--sans)">1 Ejecutivo + 2 Cursos + Financial Running · 12 meses</div>
+        <div style="font-size:26px;font-weight:300;color:#fff;font-family:var(--sans)">$4,650 <span style="font-size:13px;color:#8C8272">USD + IVA</span></div>
+        <div style="font-size:12px;color:#8C8272;margin-top:8px;font-family:var(--sans)">1 Programa Ejecutivo + 2 Cursos + Financial Running + VIP · 14 meses</div>
       </div>
     </div>
 
@@ -564,7 +583,7 @@ body {
       <div style="background:rgba(215,185,120,0.06);border:1px solid rgba(215,185,120,0.15);border-radius:8px;padding:20px;margin-bottom:24px">
         <div style="font-size:11px;color:#8C8272;margin-bottom:4px;font-family:var(--sans)">Membresía seleccionada</div>
         <div id="m-sum-plan" style="font-size:18px;font-weight:600;color:#fff;font-family:var(--sans)">Premium</div>
-        <div id="m-sum-price" style="font-size:28px;font-weight:300;color:var(--accent);margin-top:4px;font-family:var(--sans)">$3,500 USD + IVA</div>
+        <div id="m-sum-price" style="font-size:28px;font-weight:300;color:var(--accent);margin-top:4px;font-family:var(--sans)">$4,650 USD + IVA</div>
         <div id="m-sum-name" style="font-size:13px;color:#8C8272;margin-top:8px;font-family:var(--sans)"></div>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:20px;text-align:center;margin-bottom:20px">
@@ -607,7 +626,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 <script>
 const BLOCKED_DOMAINS=['gmail','yahoo','hotmail','outlook','live','icloud','proton','aol','yandex'];
-let selPlan='PREMIUM',selPriceLabel='$3,500',selPriceNum='3500';
+let selPlan='PREMIUM',selPriceLabel='$4,650',selPriceNum='4650';
 
 function openInfoModal(){document.getElementById('modal-info').style.display='block';document.body.style.overflow='hidden';}
 function openMembershipModal(plan,price){
@@ -678,9 +697,9 @@ async function submitMembresia(){
 }
 </script>
 <script>
-/* PayPal real checkout — monto segun plan seleccionado (Standard $2,500 / Premium $3,500 USD) */
+/* PayPal real checkout — monto segun plan seleccionado (Standard $3,500 / Premium $4,650 USD) */
 function payStripe(){
-  var links={STANDARD:'https://buy.stripe.com/fZu14f1Z53iw9IJdjr2Ry2b',PREMIUM:'https://buy.stripe.com/14AcMX5bh7yMg773IR2RA2I'};
+  var links={STANDARD:'https://buy.stripe.com/4gM14f6flbP21cdfrz2RA3G',PREMIUM:'https://buy.stripe.com/00w8wH6fl2es8EFcfn2RA3H'};
   var plan=(typeof selPlan!=='undefined'&&selPlan)?selPlan:'PREMIUM';
   window.location.href=links[plan]||links.PREMIUM;
 }
@@ -692,7 +711,7 @@ function payStripe(){
     paypal.Buttons({
       style:{layout:'vertical',color:'gold',shape:'pill',label:'pay',height:48},
       createOrder:function(data,actions){
-        var amt=(typeof selPriceNum!=='undefined'&&selPriceNum)?String(selPriceNum):'3500';
+        var amt=(typeof selPriceNum!=='undefined'&&selPriceNum)?String(selPriceNum):'4650';
         var plan=(typeof selPlan!=='undefined')?selPlan:'PREMIUM';
         return actions.order.create({purchase_units:[{description:'RiskMathics Financial Annual Membership — '+plan,amount:{value:amt,currency_code:'USD'}}]});
       },
