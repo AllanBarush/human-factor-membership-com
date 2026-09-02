@@ -176,6 +176,23 @@ body {
   .areas-grid { grid-template-columns: 1fr; }
   .section-inner { padding: 60px 20px; }
 }
+
+/* ===== tiers 2026 ===== */
+.tier-sub{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--text-sub);margin:-2px 0 14px}
+.tier-desc{font-family:var(--sans);font-weight:300;font-size:14px;line-height:1.7;color:var(--text-sub);margin:12px 0 18px;padding-bottom:16px;border-bottom:1px solid rgba(215,185,120,0.18)}
+.tier-value{font-family:var(--sans);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin:16px 0 18px}
+.tier-value b{font-size:15px;letter-spacing:0;text-transform:none;font-weight:600}
+/* ===== comparativa ===== */
+#compare{padding:80px 24px;background:var(--bg-deep,#0E0C08)}
+#compare .cmp{width:100%;max-width:940px;margin:36px auto 0;border-collapse:collapse;font-family:var(--sans);font-size:14px}
+#compare th{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);padding:14px 16px;border-bottom:1px solid rgba(215,185,120,0.4);text-align:left}
+#compare th:not(:first-child),#compare td:not(:first-child){text-align:center;width:23%}
+#compare td{padding:14px 16px;border-bottom:1px solid rgba(215,185,120,0.14);color:var(--text-sub);font-weight:300;vertical-align:middle}
+#compare td:first-child{color:#fff}
+#compare td.in{color:var(--accent);font-weight:500}
+#compare td.no{color:rgba(140,130,114,0.6)}
+#compare tr:hover td{background:rgba(215,185,120,0.04)}
+@media(max-width:640px){#compare .cmp{font-size:12.5px}#compare th,#compare td{padding:11px 8px}}
 </style>
 
 <style id="upd-sep26">
@@ -285,42 +302,52 @@ body {
     <div class="reveal" style="margin:0 0 34px;border:1px solid rgba(215,185,120,0.25);border-radius:10px;overflow:hidden"><img src="hero-human-factor.jpg" alt="The Human Factor — Financial Training Membership" style="width:100%;display:block" loading="lazy"></div>
     <div class="tiers reveal">
       <!-- STANDARD -->
-      <div class="tier tier-standard">
-        <img class="tier-card" src="card-standard-2026.jpg" alt="RiskMathics Financial Institute Membership Standard" loading="lazy">
-        <div class="tier-label">Standard</div>
-        <div class="tier-price">$3,450</div>
-        <div class="tier-currency">USD + TAX (16%)</div>
-        <ul class="tier-features">
-            <li class="highlight">1 Diplomado completo a elegir</li>
-            <li class="highlight">2 Cursos y/o encuentros a elegir (como el Risk Management &amp; Trading Conference)</li>
-            <li>Acceso a formación en áreas clave: Derivados, Risk Management, Investment Banking, Private Equity, Hedge Funds, ESG &amp; Climate Risk, Machine Learning, Alternative Investments, Trading &amp; Global Markets, Corporate Finance, Cybersecurity, Credit Risk y Quantum Computing</li>
-            <li>Clases en vivo, online o presenciales</li>
-            <li>Certificación con valor curricular reconocida internacionalmente</li>
-            <li>Networking con expertos y líderes del sector financiero</li>
-            <li>Vigencia de 14 meses desde la inscripción</li>
+        <div class="tier tier-standard">
+          <img class="tier-card" src="card-standard-2026.jpg" alt="RiskMathics Financial Institute Membership Standard" loading="lazy">
+          <div class="tier-label">Standard</div>
+          <div class="tier-sub">El punto de entrada serio</div>
+          <div class="tier-price">USD 3,450</div>
+          <div class="tier-currency">+ TAX 16%</div>
+          <div class="tier-desc">Catorce meses de formación de élite. Un diplomado, dos electivos y un examen de certificación — Derivados o Estructurados.</div>
+          <ul class="tier-features">
+            <li class="highlight">1 Diplomado completo a elegir del catálogo vigente — sin importar su costo ni duración.</li>
+            <li>2 Cursos o Encuentros internacionales a elegir.</li>
+            <li class="highlight">1 shot de examen profesional: Certificación en Derivados o en Estructurados — tú eliges.</li>
+            <li>40+ campos de alta especialización: derivados, risk, IB, PE, hedge funds, ESG, ML, quantum y más.</li>
+            <li>Clases en vivo, online o presenciales.</li>
+            <li>Certificación con valor curricular reconocida internacionalmente.</li>
+            <li>Networking con expertos y líderes del sector Financiero y Corporativo.</li>
+            <li>Vigencia de 14 meses desde la inscripción.</li>
           </ul>
-        <a href="#" class="tier-cta" onclick="openMembershipModal('STANDARD','$3,450');return false;">Aplicar → Standard</a>
-      </div>
+          <div class="tier-value">Valor de mercado: <b>hasta USD 6,900</b></div>
+          <a href="#" class="tier-cta" onclick="openMembershipModal('STANDARD','$3,450');return false;">Elegir Standard</a>
+        </div>
 
       <!-- PREMIUM -->
-      <div class="tier tier-premium">
-        <img class="tier-card" src="card-black-2026.jpg" alt="RiskMathics Financial Institute Membership Black" loading="lazy">
-        <div class="tier-label">Black</div>
-        <div class="tier-price">$4,850</div>
-        <div class="tier-currency">USD + TAX (16%)</div>
-        <ul class="tier-features">
-            <li class="highlight">1 Programa Ejecutivo completo a elegir, sin importar su costo ni su duración</li>
-            <li class="highlight">2 Cursos individuales de lo que tú quieras</li>
-            <li>Acceso a las mismas áreas de alta especialización de Standard</li>
-            <li>Clases en vivo, online o presenciales · Certificación con valor curricular</li>
-            <li class="highlight">Acceso VIP al Risk Management &amp; Trading Conference: el evento anual con las figuras más influyentes del sector</li>
-            <li class="highlight">Inscripción a Financial Running: la carrera del sector financiero que une networking y bienestar</li>
-            <li class="highlight">Eventos VIP: cenas y encuentros privados de RiskMathics durante toda la vigencia</li>
-            <li>Tu pasaporte a los círculos de influencia del mundo financiero</li>
-            <li>Vigencia de 14 meses desde la inscripción</li>
+
+        <div class="tier tier-premium">
+          <img class="tier-card" src="card-black-2026.jpg" alt="RiskMathics Financial Institute Membership Black" loading="lazy">
+          <div class="tier-label">Black</div>
+          <div class="tier-sub">El pasaporte a los círculos donde se decide</div>
+          <div class="tier-price">USD 4,850</div>
+          <div class="tier-currency">+ TAX 16%</div>
+          <div class="tier-desc">Todo lo de Standard — con Programa Ejecutivo, el círculo, y dos shots de certificación: Derivados y Alternativos.</div>
+          <ul class="tier-features">
+            <li class="highlight">1 Programa Ejecutivo completo a elegir, sin importar su costo ni su duración.</li>
+            <li>2 Cursos o Encuentros internacionales a elegir.</li>
+            <li class="highlight">2 shots de examen profesional: Certificación en Derivados y Certificación en Alternativos.</li>
+            <li>40+ campos de alta especialización.</li>
+            <li>Clases en vivo, online o presenciales.</li>
+            <li>Certificación con valor curricular reconocida internacionalmente.</li>
+            <li class="highlight">Acceso VIP al Risk Management &amp; Trading Conference.</li>
+            <li class="highlight">Financial Running: inscripción incluida.</li>
+            <li class="highlight">Cenas privadas y eventos VIP de RiskMathics durante toda la vigencia.</li>
+            <li>Networking con las autoridades más influyentes del sector financiero global.</li>
+            <li>Vigencia de 14 meses desde la inscripción.</li>
           </ul>
-        <a href="#" class="tier-cta" onclick="openMembershipModal('PREMIUM','$4,850');return false;" style="background:var(--accent);color:#0E0C08;">Aplicar → Black</a>
-      </div>
+          <div class="tier-value">Valor de mercado: <b>hasta USD 25,850</b></div>
+          <a href="#" class="tier-cta" onclick="openMembershipModal('PREMIUM','$4,850');return false;" style="background:var(--accent);color:#0E0C08;">Elegir Black</a>
+        </div>
     </div>
 
     <div class="roi-killer reveal">
@@ -339,6 +366,31 @@ body {
 </section>
 
 <!-- ===== AREAS ===== -->
+
+<!-- ===== COMPARATIVA ===== -->
+<section id="compare">
+  <div class="section-inner">
+    <h2 class="reveal" style="font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:4px;text-transform:uppercase;text-align:center;">STANDARD <span style="color:var(--accent)">vs</span> BLACK</h2>
+    <div class="accent-line reveal" style="margin-left:auto;margin-right:auto"></div>
+    <table class="cmp reveal">
+      <thead><tr><th>Beneficio</th><th>Standard</th><th>Black</th></tr></thead>
+      <tbody>
+        <tr><td>Diplomado completo a elegir</td><td class="in">Incluido</td><td class="in">Incluido</td></tr>
+        <tr><td>Programa Ejecutivo — cualquiera del catálogo</td><td class="no">—</td><td class="in">Incluido</td></tr>
+        <tr><td>2 electivos: curso (USD 300–800) o conferencia</td><td class="in">Incluido</td><td class="in">Incluido</td></tr>
+        <tr><td>Examen de certificación profesional</td><td class="in">1 shot · Derivados o Estructurados</td><td class="in">2 shots · Derivados y Alternativos</td></tr>
+        <tr><td>Certificación oficial con valor curricular</td><td class="in">Incluido</td><td class="in">Incluido</td></tr>
+        <tr><td>Magazine, papers, webinars y podcasts</td><td class="in">Incluido</td><td class="in">Incluido</td></tr>
+        <tr><td>Conference — acceso VIP, cenas y comidas privadas</td><td class="no">—</td><td class="in">Incluido</td></tr>
+        <tr><td>Financial Running — inscripción incluida</td><td class="no">—</td><td class="in">Incluido</td></tr>
+        <tr><td>Networking con autoridades de las finanzas y el cine</td><td class="no">—</td><td class="in">Incluido</td></tr>
+        <tr><td>Eventos privados en sedes de gran exclusividad</td><td class="no">—</td><td class="in">Incluido</td></tr>
+      </tbody>
+    </table>
+    <p class="reveal" style="text-align:center;margin-top:26px;font-family:var(--serif);font-style:italic;color:var(--text-sub);font-size:15px">The best investment is in you.</p>
+  </div>
+</section>
+
 <section id="areas">
   <div class="section-inner">
     <h2 class="reveal" style="font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:4px;text-transform:uppercase;color:var(--accent);">CAMPOS DE ESPECIALIZACIÓN</h2>
