@@ -301,10 +301,10 @@ body {
 
     <div class="reveal" style="margin:0 0 34px;border:1px solid rgba(215,185,120,0.25);border-radius:10px;overflow:hidden"><img src="hero-human-factor.jpg" alt="The Human Factor — Financial Training Membership" style="width:100%;display:block" loading="lazy"></div>
     <div class="tiers reveal">
-      <!-- STANDARD -->
+      <!-- GOLD -->
         <div class="tier tier-standard">
-          <img class="tier-card" src="card-standard-2026.jpg" alt="RiskMathics Financial Institute Membership Standard" loading="lazy">
-          <div class="tier-label">Standard</div>
+          <img class="tier-card" src="card-gold-2026.jpg" alt="RiskMathics Financial Institute Membership Gold" loading="lazy">
+          <div class="tier-label">Gold</div>
           <div class="tier-sub">El punto de entrada serio</div>
           <div class="tier-price">USD 3,450</div>
           <div class="tier-currency">+ TAX 16%</div>
@@ -320,10 +320,10 @@ body {
             <li>Vigencia de 14 meses desde la inscripción.</li>
           </ul>
           <div class="tier-value">Valor de mercado: <b>hasta USD 6,900</b></div>
-          <a href="#" class="tier-cta" onclick="openMembershipModal('STANDARD','$3,450');return false;">Elegir Standard</a>
+          <a href="#" class="tier-cta" onclick="openMembershipModal('GOLD','$3,450');return false;">Elegir Gold</a>
         </div>
 
-      <!-- PREMIUM -->
+      <!-- BLACK -->
 
         <div class="tier tier-premium">
           <img class="tier-card" src="card-black-2026.jpg" alt="RiskMathics Financial Institute Membership Black" loading="lazy">
@@ -331,7 +331,7 @@ body {
           <div class="tier-sub">El pasaporte a los círculos donde se decide</div>
           <div class="tier-price">USD 4,850</div>
           <div class="tier-currency">+ TAX 16%</div>
-          <div class="tier-desc">Todo lo de Standard — con Programa Ejecutivo, el círculo, y dos shots de certificación: Derivados y Alternativos.</div>
+          <div class="tier-desc">Todo lo de Gold — con Programa Ejecutivo, el círculo, y dos shots de certificación: Derivados y Alternativos.</div>
           <ul class="tier-features">
             <li class="highlight">1 Programa Ejecutivo completo a elegir, sin importar su costo ni su duración.</li>
             <li>2 Cursos o Encuentros internacionales a elegir.</li>
@@ -346,7 +346,7 @@ body {
             <li>Vigencia de 14 meses desde la inscripción.</li>
           </ul>
           <div class="tier-value">Valor de mercado: <b>hasta USD 25,850</b></div>
-          <a href="#" class="tier-cta" onclick="openMembershipModal('PREMIUM','$4,850');return false;" style="background:var(--accent);color:#0E0C08;">Elegir Black</a>
+          <a href="#" class="tier-cta" onclick="openMembershipModal('BLACK','$4,850');return false;" style="background:var(--accent);color:#0E0C08;">Elegir Black</a>
         </div>
     </div>
 
@@ -370,10 +370,10 @@ body {
 <!-- ===== COMPARATIVA ===== -->
 <section id="compare">
   <div class="section-inner">
-    <h2 class="reveal" style="font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:4px;text-transform:uppercase;text-align:center;">STANDARD <span style="color:var(--accent)">vs</span> BLACK</h2>
+    <h2 class="reveal" style="font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:4px;text-transform:uppercase;text-align:center;">GOLD <span style="color:var(--accent)">vs</span> BLACK</h2>
     <div class="accent-line reveal" style="margin-left:auto;margin-right:auto"></div>
     <table class="cmp reveal">
-      <thead><tr><th>Beneficio</th><th>Standard</th><th>Black</th></tr></thead>
+      <thead><tr><th>Beneficio</th><th>Gold</th><th>Black</th></tr></thead>
       <tbody>
         <tr><td>Diplomado completo a elegir</td><td class="in">Incluido</td><td class="in">Incluido</td></tr>
         <tr><td>Programa Ejecutivo — cualquiera del catálogo</td><td class="no">—</td><td class="in">Incluido</td></tr>
@@ -427,7 +427,7 @@ body {
   </div>
 </section>
 
-<!-- ===== PREMIUM EVENTS (new section) ===== -->
+<!-- ===== BLACK EVENTS ===== -->
 <section id="events">
   <div class="section-inner">
     <h2 class="reveal" style="font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:4px;text-transform:uppercase;">BLACK <span style="color:var(--accent)">EXPERIENCES</span></h2>
@@ -476,7 +476,7 @@ body {
     
     <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px">
       <a href="#" onclick="openInfoModal();return false;" style="display:inline-block;padding:16px 36px;border:1px solid rgba(215,185,120,0.4);border-radius:4px;color:var(--accent);font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.3s" onmouseover="this.style.borderColor='var(--accent)';this.style.background='rgba(215,185,120,0.08)'" onmouseout="this.style.borderColor='rgba(215,185,120,0.4)';this.style.background='transparent'">Solicitar Información</a>
-      <a href="#" onclick="openMembershipModal('PREMIUM','$4,850');return false;" class="cta-button" style="margin-top:0">Obtener Membresía</a>
+      <a href="#" onclick="openMembershipModal('BLACK','$4,850');return false;" class="cta-button" style="margin-top:0">Obtener Membresía</a>
     </div>
     <p class="cta-from reveal">Desde $3,450 USD + TAX · Plazos disponibles</p>
       <p class="reveal" style="margin-top:28px;font-family:var(--sans);font-size:14px;color:#8C8272;letter-spacing:0.04em">
@@ -543,12 +543,12 @@ body {
 
     <!-- Plan selector -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px" id="plan-selector">
-      <div id="plan-std" onclick="selectPlan('STANDARD','$3,450','3450')" style="cursor:pointer;border:1px solid rgba(215,185,120,0.2);border-radius:8px;padding:20px;transition:all 0.2s">
-        <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8C8272;margin-bottom:6px;font-family:var(--sans)">Standard</div>
+      <div id="plan-gold" onclick="selectPlan('GOLD','$3,450','3450')" style="cursor:pointer;border:1px solid rgba(215,185,120,0.2);border-radius:8px;padding:20px;transition:all 0.2s">
+        <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8C8272;margin-bottom:6px;font-family:var(--sans)">Gold</div>
         <div style="font-size:26px;font-weight:300;color:#fff;font-family:var(--sans)">$3,450 <span style="font-size:13px;color:#8C8272">USD + IVA</span></div>
         <div style="font-size:12px;color:#8C8272;margin-top:8px;font-family:var(--sans)">1 Diplomado + 2 Cursos · 14 meses</div>
       </div>
-      <div id="plan-pre" onclick="selectPlan('PREMIUM','$4,850','4850')" style="cursor:pointer;border:1px solid var(--accent);border-radius:8px;padding:20px;background:rgba(215,185,120,0.06);transition:all 0.2s;position:relative">
+      <div id="plan-pre" onclick="selectPlan('BLACK','$4,850','4850')" style="cursor:pointer;border:1px solid var(--accent);border-radius:8px;padding:20px;background:rgba(215,185,120,0.06);transition:all 0.2s;position:relative">
         <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0E0C08;font-size:9px;font-weight:700;letter-spacing:0.1em;padding:3px 10px;border-radius:10px;white-space:nowrap;font-family:var(--sans)">RECOMENDADO</div>
         <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;font-family:var(--sans)">Black</div>
         <div style="font-size:26px;font-weight:300;color:#fff;font-family:var(--sans)">$4,850 <span style="font-size:13px;color:#8C8272">USD + IVA</span></div>
@@ -678,7 +678,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 <script>
 const BLOCKED_DOMAINS=['gmail','yahoo','hotmail','outlook','live','icloud','proton','aol','yandex'];
-let selPlan='PREMIUM',selPriceLabel='$4,850',selPriceNum='4850';
+let selPlan='BLACK',selPriceLabel='$4,850',selPriceNum='4850';
 
 function openInfoModal(){document.getElementById('modal-info').style.display='block';document.body.style.overflow='hidden';}
 function openMembershipModal(plan,price){
@@ -692,10 +692,10 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal('modal-i
 
 function selectPlan(plan,price,num){
   selPlan=plan;selPriceLabel=price;selPriceNum=num;
-  document.getElementById('plan-std').style.borderColor=plan==='STANDARD'?'var(--accent)':'rgba(215,185,120,0.2)';
-  document.getElementById('plan-std').style.background=plan==='STANDARD'?'rgba(215,185,120,0.06)':'transparent';
-  document.getElementById('plan-pre').style.borderColor=plan==='PREMIUM'?'var(--accent)':'rgba(215,185,120,0.2)';
-  document.getElementById('plan-pre').style.background=plan==='PREMIUM'?'rgba(215,185,120,0.06)':'transparent';
+  document.getElementById('plan-gold').style.borderColor=plan==='GOLD'?'var(--accent)':'rgba(215,185,120,0.2)';
+  document.getElementById('plan-gold').style.background=plan==='GOLD'?'rgba(215,185,120,0.06)':'transparent';
+  document.getElementById('plan-pre').style.borderColor=plan==='BLACK'?'var(--accent)':'rgba(215,185,120,0.2)';
+  document.getElementById('plan-pre').style.background=plan==='BLACK'?'rgba(215,185,120,0.06)':'transparent';
 }
 
 function mStep(n){
@@ -749,11 +749,11 @@ async function submitMembresia(){
 }
 </script>
 <script>
-/* PayPal real checkout — monto segun plan seleccionado (Standard $3,450 / Premium $4,850 USD) */
+/* PayPal real checkout — monto segun plan seleccionado (Gold $3,450 / Black $4,850 USD) */
 function payStripe(){
-  var links={STANDARD:'https://buy.stripe.com/14A4gr47dcT6dYZ3IR2RA3I',PREMIUM:'https://buy.stripe.com/00w4grfPV2esf33gvD2RA3J'};
-  var plan=(typeof selPlan!=='undefined'&&selPlan)?selPlan:'PREMIUM';
-  window.location.href=links[plan]||links.PREMIUM;
+  var links={GOLD:'https://buy.stripe.com/14A4gr47dcT6dYZ3IR2RA3I',BLACK:'https://buy.stripe.com/00w4grfPV2esf33gvD2RA3J'};
+  var plan=(typeof selPlan!=='undefined'&&selPlan)?selPlan:'BLACK';
+  window.location.href=links[plan]||links.BLACK;
 }
 (function(){
   var s=document.createElement('script');
@@ -764,7 +764,7 @@ function payStripe(){
       style:{layout:'vertical',color:'gold',shape:'pill',label:'pay',height:48},
       createOrder:function(data,actions){
         var amt=(typeof selPriceNum!=='undefined'&&selPriceNum)?String(selPriceNum):'4850';
-        var plan=(typeof selPlan!=='undefined')?selPlan:'PREMIUM';
+        var plan=(typeof selPlan!=='undefined')?selPlan:'BLACK';
         return actions.order.create({purchase_units:[{description:'RiskMathics Financial Annual Membership — '+plan,amount:{value:amt,currency_code:'USD'}}]});
       },
       onApprove:function(data,actions){
